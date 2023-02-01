@@ -13,17 +13,19 @@ public class CalculadoraServicio {
 
     private TracerImpl traza = new TracerImpl();
 
-    public void suma(Long parametro1, Long parametro2) {
+    public Long suma(Long parametro1, Long parametro2) {
         Long resultado = parametro1 + parametro2;
 
         traza.trace(resultado);
         log.info("El resultado de la operacion es {}", resultado);
+        return resultado;
     }
 
-    public void resta(Long parametro1, Long parametro2) {
+    public Long resta(Long parametro1, Long parametro2) {
         Long resultado = parametro1 - parametro2;
 
         traza.trace(resultado);
         log.info("El resultado de la operacion es {}", resultado);
+        return resultado;
     }
 }
