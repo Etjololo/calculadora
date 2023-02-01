@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  api-superheroes:
+    container_name: calculadora
+    build:
+      dockerfile: Dockerfile
+    image: calculadora:latest
+    ports:
+      - 8080:8080
